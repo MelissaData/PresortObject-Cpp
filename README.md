@@ -16,9 +16,8 @@ And return
 - A csv file of presorted addresses
 
 ## Tested Environments
-- Windows 64-bit Microsoft Visual C++ 14.34
-- Powershell 5.1
-- Melissa data files for 2023-05
+- Windows 10 64-bit Microsoft Visual C++ 14.34, Powershell 5.1
+- Melissa data files for 2023-07
 - Nmake 14.34
 - Visual Studio 2022 Developer Command Prompt v17.4.2 64-bit
 
@@ -84,7 +83,7 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/PresortObject-Cpp.git
+$ git clone https://github.com/MelissaData/PresortObject-Cpp
 $ cd PresortObject-Cpp
 ```
 
@@ -127,13 +126,13 @@ When you have modified the script to match your data location, let's run the scr
 
     You can pass a file path in ```-file``` parameter and a license string in ```-license``` parameter to test Presort Object. For example:
     ```
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectWindowsCpp\MelissaPresortObjectSampleInput.csv" 
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectWindowsCpp\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>"
+    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" 
+    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>"
     ```
     For quiet mode:
     ```
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectWindowsCpp\MelissaPresortObjectSampleInput.csv" -quiet
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectWindowsCpp\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>" -quiet
+    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -quiet
+    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>" -quiet
     ```
 This is the expected output from a successful setup for interactive mode:
 

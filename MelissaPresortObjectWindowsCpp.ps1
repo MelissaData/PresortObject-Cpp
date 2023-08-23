@@ -19,7 +19,7 @@ class DLLConfig {
 
 ######################### Config ###########################
 
-$RELEASE_VERSION = '2023.05'
+$RELEASE_VERSION = '2023.07'
 $ProductName = "presort_data"
 
 # Uses the location of the .ps1 file 
@@ -226,8 +226,12 @@ cmd.exe /C """$CmdPath"" x86_x64 && Powershell -File BuildProgram.ps1" > $null
 
 # Run project
 if ([string]::IsNullOrEmpty($file)) {
+  Push-Location MelissaPresortObjectWindowsCpp
   & $BuildPath\MelissaPresortObjectWindowsCpp.exe --license $License  --dataPath $DataPath
+  Pop-Location
 }
 else {
+  Push-Location MelissaPresortObjectWindowsCpp
   & $BuildPath\MelissaPresortObjectWindowsCpp.exe --license $License  --dataPath $DataPath --file $file
+  Pop-Location
 }
