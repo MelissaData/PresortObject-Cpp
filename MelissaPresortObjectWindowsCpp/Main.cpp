@@ -119,7 +119,7 @@ void RunAsConsole(string license, string testPresortFile, string dataPath)
 		{
 			string testAnotherResponse;
 
-			cout << "\nTest another phone? (Y/N)" << endl;
+			cout << "\nTest another file? (Y/N)" << endl;
 			getline(cin, testAnotherResponse);
 
 			if (!testAnotherResponse.empty())
