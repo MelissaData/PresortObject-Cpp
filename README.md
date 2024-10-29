@@ -19,7 +19,7 @@ And return
 
 ## Tested Environments
 - Windows 10 64-bit Microsoft Visual C++ 14.34, Powershell 5.1
-- Melissa data files for 2024-08
+- Melissa data files for 2024-09
 - Nmake 14.34
 - Visual Studio 2022 Developer Command Prompt v17.4.2 64-bit
 
@@ -85,8 +85,8 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/PresortObject-Cpp
-$ cd PresortObject-Cpp
+git clone https://github.com/MelissaData/PresortObject-Cpp
+cd PresortObject-Cpp
 ```
 
 #### Set up Melissa Updater 
@@ -119,23 +119,23 @@ When you have modified the script to match your data location, let's run the scr
 
     The script will prompt the user for a file path, then use the provided file to test Presort Object.  For example:
     ```
-    $ .\MelissaPresortObjectWindowsCpp.ps1
+    .\MelissaPresortObjectWindowsCpp.ps1
     ```
     For quiet mode:
     ```
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -quiet
+    .\MelissaPresortObjectWindowsCpp.ps1 -quiet
     ```
 - Command Line 
 
     You can pass a file path in ```-file``` parameter and a license string in ```-license``` parameter to test Presort Object. For example:
     ```
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" 
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>"
+    .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" 
+    .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>"
     ```
     For quiet mode:
     ```
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -quiet
-    $ .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>" -quiet
+    .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -quiet
+    .\MelissaPresortObjectWindowsCpp.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>" -quiet
     ```
 This is the expected output from a successful setup for interactive mode:
 
